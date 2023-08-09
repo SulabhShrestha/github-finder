@@ -12,8 +12,6 @@ function UserPage() {
   const { user, isLoading, repos, dispatch } = useContext(GithubContext);
   const params = useParams();
 
-  console.log("Isliading " + isLoading);
-
   useEffect(() => {
     dispatch({ type: "set_loading" }); // true
     const getUserData = async () => {
